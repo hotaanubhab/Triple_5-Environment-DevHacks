@@ -21,15 +21,23 @@
     
     <div class="logo">Kabaadi</div>
 
-<form action="">
+<form action="form1.php" method  = "post">
 
-  <input type="text" name="material" id="box1" value="Material You want to sell"><br>
-  <input type="text" name="price" id="Weight" value="Expected price per kg"><br>
-  <input type="text" name="weight" id="Price" value="Approximate weight in kg"><br>
+   <label>Material : </label><select name="Material">
+    <option value="paper">Papers</option>
+    <option value="plastic">Plastic</option>
+    <option value="metal">Metals</option>
+    <option value="e">E-Waste</option>
+  </select>
+<br>
+  <label>Approximate Price per. Kg : </label>
+  <input type="text" name="price" id="Price" value="" placeholder = ><br>
+  <label>Approximate Weight in Kg :</label>
+  <input type="text" name="weight" id="Weight" value="" placeholder = ""><br>
   Drop
   <input type="radio" name="collection" value="drop">
   <br>
-  pickup<input type="radio" name="collection" value="pick">
+  Pickup<input type="radio" name="collection" value="pick">
   <br>
   <input type="submit" name="submit" value="Submit">
 </form>
