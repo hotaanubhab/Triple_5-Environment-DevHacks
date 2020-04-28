@@ -63,7 +63,7 @@ a {
   
     body{
         margin: 0px;
-        background-image:linear-gradient(rgba(0, 128, 0, 0.39),rgba(0, 128, 0, 0.267),rgba(0, 128, 0, 0.116));
+        background-image:linear-gradient(rgb(0, 255, 0,0.2)	,rgb(19, 236, 19,0.3),rgba(0, 128, 0, 0.116));
     }
   
     .logo:hover{
@@ -84,7 +84,7 @@ opacity: 0;
     
     }
     .overlay1:hover,.overlay2:hover,.overlay3:hover,.overlay4:hover{
-      background-color: rgb(46, 77, 46);
+      background-color: rgb(59, 97, 59);
       opacity: 0.75;
       color: azure;
       

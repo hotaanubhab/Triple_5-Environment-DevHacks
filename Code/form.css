@@ -1,0 +1,9 @@
+form{
+    padding-top: 100px;
+}
+input{
+    background-color: rgba(0, 255, 255, 0);
+   border-color: cadetblue;
+   border-style: solid;
+   margin-top: 40px;
+}
