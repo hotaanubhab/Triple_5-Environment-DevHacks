@@ -1,9 +1,13 @@
 form{
-    padding-top: 100px;
+    padding: 80px 100px 0px 100px;
+
 }
-input{
+input,select{
     background-color: rgba(0, 255, 255, 0);
    border-color: cadetblue;
    border-style: solid;
-   margin-top: 40px;
+   margin-top: 30px;
+}
+.error{
+	color : red;
 }

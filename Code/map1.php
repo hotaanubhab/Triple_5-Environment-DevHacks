@@ -1,26 +1,34 @@
+<!DOCTYPE html> 
 <html>
     <!--fix the fonts-->
     
     <head>
-        <link rel = "stylesheet" type = "text/css" href = "form.css">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel = "stylesheet" type = "text/css" href = "common.css">
         <title>Welcome to Kabaadi</title>
         <style>
-    #map {
-      height: 450px;
-      width : 600px;
-      float : right;
-      
-      margin : 80px 30px 0 0;
-    }
+   #map{
+    margin-Top : 100px;
+    margin-Left : 50px;
+    float : left;
+    height: 430px;
+    width : 580px;
+   }
+   .button{
+     float: right;
+     margin-top: 275px;
+     margin-right: 275px;
+   }
     html, body {
       height: 100%;
+      width : 100%;
       margin: 0;
       padding: 0;
     }	
     .everything{
-      float : left;
+       text-align : center;
+       font-size : larger;
     }
   </style>
     </head>
@@ -28,39 +36,19 @@
     <body>
     <div class="everything">
     
-    <!--navabar-->
+   <!-- navbar -->
       <ul>
-        <li><a href="about.html">Contact</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="request.php">Contact</a></li>
+        <li><a href="request.php">Requests</a></li>
         
-        <li><a href="home.html">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         </ul>
     
-    <div class="logo">Kabaadi</div>
+    <div class="logo">TrashEx</div>
+<div id="map"></div>
 
-<form action="form1.php" method  = "post">
-
-   <label>Material : </label><select name="Material">
-    <option value="paper">Papers</option>
-    <option value="plastic">Plastic</option>
-    <option value="metal">Metals</option>
-    <option value="e">E-Waste</option>
-  </select>
-<br>
-  <label>Approximate Price per. Kg : </label>
-  <input type="text" name="price" id="Price" value="" placeholder = ><br>
-  <label>Approximate Weight in Kg :</label>
-  <input type="text" name="weight" id="Weight" value="" placeholder = ""><br>
-  Drop
-  <input type="radio" name="collection" value="drop">
-  <br>
-  Pickup<input type="radio" name="collection" value="pick">
-  <br>
-  <input type="submit" name="submit" value="Submit">
-</form>
-    
-    </div>
-    <div id="map"></div>
+<button type="button" class="button" onclick="teledata()"><h2>Confirm</h2></button>
+  </div>
   <script>
     let map;
     var markers = [];
@@ -77,6 +65,17 @@
       });
       
     }
+    var lat;
+    var lng;
+    function teledata(){
+      showHint(lat,lng);
+    }
+
+
+    function gonow(){
+      window.location.href = "index.php";
+    }
+    
     function setMapOnAll(map) {
         for (var i = 0; i < markers.length; i++) {
           markers[i].setMap(map);
@@ -92,21 +91,35 @@
       });
 
       marker.addListener('position_changed', function() {
-        console.log(marker.getPosition().lat());
-        console.log(marker.getPosition().lng());
+         lat = (marker.getPosition().lat());
+         lng = (marker.getPosition().lng());
       });
 
       markers.push(marker);
-      console.log(marker.getPosition().lat());
-      console.log(marker.getPosition().lng());
+       lat = (marker.getPosition().lat());
+       lng = (marker.getPosition().lng());
 
       //store the marker object drawn in global array
-     
+      
     }
-
+    function showHint(str,str2) {
+  var xhttp;
+  
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      console.log(this.responseText);
+      gonow();
+    }
+  };
+  xhttp.open("GET", "gethint.php?q="+str+"&u="+str2, true);
+  xhttp.send();   
+}   
   </script>
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWQ1Hb_-b1DCWpAW0RuuJ-acjIhVwm-fU&callback=initMap">
   </script>
+
+
     </body>
 </html>

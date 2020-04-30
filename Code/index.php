@@ -14,48 +14,46 @@
     
     <!--navabar-->
       <ul>
-        <li><a href="about.html">Contact</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="request.php">Contact</a></li>
+        <li><a href="request.php">Requests</a></li>
         
-        <li><a href="home.html">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         </ul>
     
-    <div class="logo">Kabaadi</div>
+    <div class="logo">TrashEx</div>
+
     
     <!--overlays-->
-    
-    <a href="form1.html">
+    <a href="form1.php">
       <div class="overlay1"> 
         <h4 class="pointer">Newspapers</h4> 
         
       </div>
     </a>
      
-    <a href="form1.html">
+    <a href="form1.php">
     <div class="overlay2"> 
         <h4 class="pointer"><b>Plastics</b></h4> 
          
       </div>
     </a>
   
-    <a href="form1.html">
+    <a href="form1.php">
     <div class="overlay3"> 
         <h4 class="pointer"><b>Metals</b></h4> 
           
     </div>
     </a>
    
-    <a href="form1.html">
+    <a href="form1.php">
     <div class="overlay4"> 
         <h4 class="pointer"><b>E Waste</b></h4> 
         
     </div>
-    </a>
-    
-    
+    </a>   
     <!--images-->
       
-        
+
           <img class="img1 ohfuckshit" src="images/newspaper1.jpg" alt="Avatar" >
           <img class="img2 ohfuckshit" src="images/plastic1.jpg"     alt="Avatar" >
           <img class="img3 ohfuckshit" src="images/metal1.jpg"     alt="Avatar" >
@@ -63,7 +61,7 @@
         
     
     
-    
+
     </div>
    
 </div>
