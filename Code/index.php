@@ -26,41 +26,40 @@
     <!--overlays-->
 
   
-    <a href="form1.php">
+   <a href="form1.php?m=4">
       <div class="overlay1"> 
         <h4 class="pointer">Newspapers</h4> 
         
       </div>
     </a>
      
-    <a href="form1.php">
+    <a href="form1.php?m=1">
     <div class="overlay2"> 
         <h4 class="pointer"><b>Plastics</b></h4> 
          
       </div>
     </a>
   
-    <a href="form1.php">
+    <a href="form1.php?m=2">
     <div class="overlay3"> 
         <h4 class="pointer"><b>Metals</b></h4> 
           
     </div>
     </a>
    
-    <a href="form1.php">
+    <a href="form1.php?m=3">
     <div class="overlay4"> 
         <h4 class="pointer"><b>E Waste</b></h4> 
         
     </div>
     </a>   
-  
+    
     <a href="form2.php">
       <div class="overlay5"> 
-          <h4 class="pointer RENDI"><b>Domestic waste</b></h4> 
+          <h4 class="pointer RENDI"><b>Domestic Waste</b></h4> 
           
       </div>
       </a>   
-    
     <!--images-->
       
 

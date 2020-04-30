@@ -2,7 +2,20 @@
 
 include 'db.php';
 $error  = array('price'=>'','weight'=>'','collection'=>'','material' => '','name'=>'','email'=>'','contact'=>'');
+$id = $_GET['m'];
 $material = "";
+if($id == 1){
+  $material = "plastic";
+}
+if($id == 2){
+  $material = "metal";
+}
+if($id == 3){
+  $material = "e";
+}
+if($id == 4){
+  $material = "paper";
+}
 $price ="";
 $weight = "";
 $collection = "";
