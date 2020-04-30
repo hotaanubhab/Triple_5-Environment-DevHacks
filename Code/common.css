@@ -56,9 +56,14 @@ a {
       transition: 0.3s;
   
     }
+    .andyou{
+        margin-left: 301.66px;
+        margin-right: 301.66px;
+    }
     .everything{
-        padding-left: 101.66;
-        padding-right: 101.66px;
+
+      margin-left: 101.66px;
+      margin-right: 101.66px;
     }
   
     body{

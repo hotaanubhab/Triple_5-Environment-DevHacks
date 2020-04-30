@@ -42,7 +42,7 @@ a {
       text-align: center;
       height: auto;
       width: auto;
-      margin-left: 544.9px;
+      margin-left: 568.53px;
       font-size: 40px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       font-weight: bolder;
@@ -73,17 +73,24 @@ a {
     /* size and props of cards*/
    
    
-    .overlay1,.overlay2,.overlay3,.overlay4,.overlay5,.overlay6{
+    .overlay1,.overlay2,.overlay3,.overlay4,.overlay6{
       width:235px;
       height: 140px;
-      
-      transition: 0.6s;
-opacity: 0;    
+     transition: 0.6s;
+      opacity: 0;    
       z-index: 3;
-
-    
     }
-    .overlay1:hover,.overlay2:hover,.overlay3:hover,.overlay4:hover{
+    .overlay5{
+      transition: 0.6s;
+      opacity: 0;    
+      z-index: 3;
+      position: absolute;
+      top: 100px;
+      left: 101.6px;
+      height: 300px;
+      width: 568px;
+    }
+    .overlay1:hover,.overlay2:hover,.overlay3:hover,.overlay4:hover,.overlay5:hover{
       background-color: rgb(59, 97, 59);
       opacity: 0.75;
       color: azure;
@@ -95,13 +102,10 @@ opacity: 0;
     height: 140px;
      box-shadow: 0 4px 8px 0 rgba(0, 17, 3, 0.4);
      z-index: 2;
-     display: inline-block;
-     margin-top: 100px;
-     margin-left: 41.56px;
+  
+    
     }
-  .img1{
-    margin-left: 0;
-  }
+
     h4{
       font-size: 20px;
       font-family: 'Verdana regular';
@@ -109,32 +113,53 @@ opacity: 0;
       vertical-align: middle;
         margin-top: 58px;
       }
+
+      .RENDI{
+         margin-top: 140PX;
+      }
   
   /*positon of cards*/
   
-  .overlay1{
+  .overlay1,.img1{
     position: absolute;
     top: 100px;
-    left: 101.66px;
+    right: 356.66px;
   }
-  .overlay2{
+  .overlay2,.img2{
     position: absolute;
-    left:382.22px;
+    right:101.66;
     top: 100px;
   
   }
-  .overlay3{
+  .overlay3,.img3{
     position: absolute;
-    top: 100px;
-    left: 662.78px;
+    top: 260px;
+    right: 356.66px;
   }
-  .overlay4{
+  .overlay4,.img4{
     position: absolute;
-    top: 100px;
+    top: 260px;
     right: 101.6px;
   
   }
   
+  
+  .img5{
+    position: absolute;
+    top: 100px;
+    left: 101.6px;
+    height: 300px;
+    width: 500px;
+  }
+
+  .img6{
+    position: absolute;
+    top: 100px;
+    left: 385.6px;
+    height: 300px;
+    width: 283px;
+
+  }
   
   .footer{
     position: relative;

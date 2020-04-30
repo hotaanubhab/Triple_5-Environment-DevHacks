@@ -16,7 +16,7 @@
       <ul>
         <li><a href="request.php">Contact</a></li>
         <li><a href="request.php">Requests</a></li>
-        
+        <li><a href="request.php">Route</a></li>
         <li><a href="index.php">Home</a></li>
         </ul>
     
@@ -24,6 +24,8 @@
 
     
     <!--overlays-->
+
+  
     <a href="form1.php">
       <div class="overlay1"> 
         <h4 class="pointer">Newspapers</h4> 
@@ -51,6 +53,14 @@
         
     </div>
     </a>   
+  
+    <a href="form1.php">
+      <div class="overlay5"> 
+          <h4 class="pointer RENDI"><b>Domestic waste</b></h4> 
+          
+      </div>
+      </a>   
+    
     <!--images-->
       
 
@@ -58,6 +68,8 @@
           <img class="img2 ohfuckshit" src="images/plastic1.jpg"     alt="Avatar" >
           <img class="img3 ohfuckshit" src="images/metal1.jpg"     alt="Avatar" >
           <img class="img4 ohfuckshit" src="images/ewaste1.jpg"       alt="Avatar" >
+          <img class="img5 "           src="images/domestic1.png"       alt="Avatar" >
+          <img class="img6 "           src="images/domestic2.PNg"       alt="Avatar" >
         
     
     
