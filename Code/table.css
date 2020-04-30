@@ -1,0 +1,38 @@
+table{
+    font-family: 'Segoe UI light';
+    text-align: center;
+    font-weight: 900px;
+margin-top: 100px;
+border-collapse: collapse;
+color: azure;
+;margin-left:auto;margin-right:auto
+}
+td{
+    border-color: black;
+    border-width: 3px;
+}
+table th{
+    text-align: center;
+    background-color: rgb(9, 87, 29);
+    border: 1px solid black;
+    padding: 4px 8px;
+    border-spacing: 0px;
+
+}
+
+table td{
+    border: 1px solid black;
+    padding: 4px 8px;
+    border-spacing: 0px;
+}
+table tr:nth-child(odd) td{
+    background-color: rgb(44, 148, 58);
+
+}
+table tr:nth-child(even) td{
+    background-color: rgba(25, 110, 25, 0.514);
+
+}
+.everything{
+    height: 478px;
+}

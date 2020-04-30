@@ -59,6 +59,15 @@ label,input,select{
 
     position: absolute;
     top: 127px;
-    right: 201.66px;
+    right: 154.66px;
     height: 367px;
+    border-radius: 15px;
+}
+.spidermon{
+    position: absolute;
+    top: 127px;
+    right: 126.66px;
+    height: 252px;
+    background-color: aliceblue;
+    border-radius: 15px;
 }

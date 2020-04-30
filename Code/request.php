@@ -15,7 +15,7 @@ $request = mysqli_fetch_all($result, MYSQLI_ASSOC);
     <!--fix the fonts-->
     
     <head>
-        <link rel = "stylesheet" type = "text/css" href = "form.css">
+        <link rel = "stylesheet" type = "text/css" href = "table.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel = "stylesheet" type = "text/css" href = "common.css">
         <title>Welcome to Kabaadi</title>
