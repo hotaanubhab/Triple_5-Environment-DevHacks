@@ -5,7 +5,7 @@ include 'db.php';
 $q = $_REQUEST["q"];
 $u = $_REQUEST["u"];
 
-$sql = "UPDATE request SET lat = $q,lng = $u WHERE lat IS NULL";
+$sql = "UPDATE pickup SET lat = $q,lng = $u WHERE lat IS NULL";
 
 mysqli_query($conn, $sql);
 

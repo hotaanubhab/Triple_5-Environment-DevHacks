@@ -11,7 +11,7 @@ if($id == 2){
   $material = "metal";
 }
 if($id == 3){
-  $material = "e";
+  $material = "e-waste";
 }
 if($id == 4){
   $material = "paper";
@@ -74,8 +74,12 @@ if(isset($_POST['submit'])){
         <link rel = "stylesheet" type = "text/css" href = "form.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel = "stylesheet" type = "text/css" href = "common.css">
-        <title>Welcome to Kabaadi</title>
-      
+        <title>Welcome to TrashEx</title>
+      <style>
+        form{
+    padding: 101px 100px 0px 100px;
+        }
+        </style>
     </head>
     
     <body>
@@ -83,9 +87,9 @@ if(isset($_POST['submit'])){
     
    <!-- navbar -->
       <ul>
-        <li><a href="request.php">Contact</a></li>
+        <li><a href="">Contact</a></li>
         <li><a href="request.php">Requests</a></li>
-        <li><a href="request.php">Route</a></li>
+        <li><a href="routes.php">Pickup</a></li>
         <li><a href="index.php">Home</a></li>
         </ul>
     
@@ -104,7 +108,7 @@ if(isset($_POST['submit'])){
     <option value="paper" <?php if($material == 'paper')echo "selected"; ?>>Papers</option>
     <option value="plastic" <?php if($material == 'plastic')echo "selected"; ?>>Plastic</option>
     <option value="metal" <?php if($material == 'metal')echo "selected"; ?>>Metals</option>
-    <option value="e" <?php if($material == 'e')echo "selected"; ?>>E-Waste</option>
+    <option value="e-waste" <?php if($material == 'e-waste')echo "selected"; ?>>E-Waste</option>
   </select>
   <div class="error"><?php echo $error['material'];?></div>
 

@@ -2,7 +2,7 @@
  include 'db.php';
 $id= $_GET['id'];
 
-$sql = "SELECT * FROM request WHERE id = $id";
+$sql = "SELECT * FROM pickup WHERE id = $id";
 
 $result = mysqli_query($conn , $sql);
 
@@ -40,7 +40,7 @@ $r = mysqli_fetch_assoc($result);
         float : left;
         font-size : larger;
     }
-      </style>
+  </style>
     </head>
     
     <body>
@@ -60,10 +60,8 @@ $r = mysqli_fetch_assoc($result);
    <div class="name">Name : <?php echo $r['name']; ?></div>
    <div class="email">Email : <?php echo $r['email']; ?></div>
    <div class="contact">Contact : <?php echo $r['contact']; ?></div>
-   <div class="material">Material : <?php echo $r['material']; ?></div>
-   <div class="price">Price : <?php echo $r['price']; ?></div>
-   <div class="weight">Weight : <?php echo $r['weight']; ?></div>
    <div class="created">Requested : <?php echo $r['created']; ?></div>
+   <div>Waste Pickup</div>
  </div>
 
 

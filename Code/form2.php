@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
 
   } else{
   $name = mysqli_real_escape_string($conn,$name);
-  $sql = "INSERT INTO request(name,email,contact) VALUES('$name','$email',$contact)";
+  $sql = "INSERT INTO pickup(name,email,contact) VALUES('$name','$email',$contact)";
   mysqli_query($conn, $sql);
   header('Location: map2.php');
   }
@@ -46,7 +46,7 @@ if(isset($_POST['submit'])){
         <link rel = "stylesheet" type = "text/css" href = "form.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel = "stylesheet" type = "text/css" href = "common.css">
-        <title>Welcome to Kabaadi</title>
+        <title>Welcome to TrashEx</title>
       
     </head>
     
@@ -55,9 +55,9 @@ if(isset($_POST['submit'])){
     
    <!-- navbar -->
       <ul>
-        <li><a href="request.php">Contact</a></li>
+        <li><a href="">Contact</a></li>
         <li><a href="request.php">Requests</a></li>
-        <li><a href="request.php">Route</a></li>
+        <li><a href="routes.php">Pickup</a></li>
         <li><a href="index.php">Home</a></li>
         </ul>
     
@@ -71,9 +71,9 @@ if(isset($_POST['submit'])){
    <div class="error"><?php echo $error['email'];?></div>
    <label>Contact : </label><input type="text" name="contact" id="Price" class="you" placeholder = "" value = "<?php echo $contact ?>">
    <div class="error"><?php echo $error['contact'];?></div>
-   <div style="width = 100%;height = 400px"><br><br><br><br><br><br></div>
+   <div style="width = 100%;height = 400px"><br><br><br></div>
   <input type="submit"  class="not" name="submit" value="Choose Pick-Up Location">
-  <br><br><br><br><br>
+  <br><br><br><br>
 
 </form>
 

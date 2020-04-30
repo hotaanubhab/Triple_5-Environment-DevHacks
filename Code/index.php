@@ -6,7 +6,7 @@
         <link rel = "stylesheet" type = "text/css" href = "index.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel = "stylesheet" type = "text/css" href = "footer.css">
-        <title>Welcome to Kabaadi</title>
+        <title>Welcome to TrashEx</title>
     </head>
     
     <body>
@@ -14,9 +14,9 @@
     
     <!--navabar-->
       <ul>
-        <li><a href="request.php">Contact</a></li>
+        <li><a href="">Contact</a></li>
         <li><a href="request.php">Requests</a></li>
-        <li><a href="request.php">Route</a></li>
+        <li><a href="routes.php">Pickup</a></li>
         <li><a href="index.php">Home</a></li>
         </ul>
     

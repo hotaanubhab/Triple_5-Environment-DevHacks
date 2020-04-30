@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 30, 2020 at 11:55 AM
+-- Generation Time: May 01, 2020 at 01:27 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.5
 
@@ -20,6 +20,27 @@ SET time_zone = "+00:00";
 --
 -- Database: `kabaadi`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pickup`
+--
+
+CREATE TABLE `pickup` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `lat` double DEFAULT NULL,
+  `lng` double DEFAULT NULL,
+  `created` timestamp NOT NULL DEFAULT current_timestamp(),
+  `contact` bigint(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `pickup`
+--
+
 
 -- --------------------------------------------------------
 
@@ -45,14 +66,17 @@ CREATE TABLE `request` (
 -- Dumping data for table `request`
 --
 
-INSERT INTO `request` (`id`, `name`, `email`, `contact`, `material`, `price`, `weight`, `collection`, `created`, `lat`, `lng`) VALUES
-(2, 'Anubhab Hota', 'hota000anubhab@gmail.com', 7908226514, 'paper', 8, 10, 'pick', '2020-04-30 06:59:30', 20.353516228580297, 85.82186068325042),
-(4, 'Anubhab Hota', 'hota000anubhab@gmail.com', 68465845, 'paper', 12, 66, 'pick', '2020-04-30 08:34:20', 20.35737756056152, 85.82229303269148),
-(5, 'DJ pt 420', 'hota000anubhab@gmail.com', 7908226514, 'paper', 420, 69, 'pick', '2020-04-30 09:27:17', 20.354620787862164, 85.8172881603241);
+
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `pickup`
+--
+ALTER TABLE `pickup`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `request`
@@ -65,10 +89,16 @@ ALTER TABLE `request`
 --
 
 --
+-- AUTO_INCREMENT for table `pickup`
+--
+ALTER TABLE `pickup`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `request`
 --
 ALTER TABLE `request`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

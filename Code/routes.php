@@ -1,7 +1,7 @@
 <?php 
  include 'db.php';
 
-$sql = 'SELECT * FROM request ORDER BY created';
+$sql = 'SELECT * FROM pickup ORDER BY created';
 
 $result = mysqli_query($conn , $sql);
 
@@ -57,7 +57,7 @@ $request = mysqli_fetch_all($result, MYSQLI_ASSOC);
           <td><?php echo $r['email'] ?></td>
           <td><?php echo $r['contact'] ?></td>
           <td><?php echo $r['created'] ?></td>
-          <td><a href="details.php?id=<?php echo $r['id'] ?>">See</a></td>
+          <td><a href="details2.php?id=<?php echo $r['id'] ?>">See</a></td>
         </tr>
       <?php } ?>
     </table>
