@@ -13,6 +13,9 @@ input,select{
  right: -20px;
  color: white;
 }
+option{
+    background-color: rgba(7, 114, 4, 0.486);
+}
 .error{
 	color : red;
 }
