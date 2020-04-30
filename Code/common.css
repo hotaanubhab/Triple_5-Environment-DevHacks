@@ -69,6 +69,7 @@ a {
     body{
         margin: 0px;
         background-image:linear-gradient(rgba(0, 128, 0, 0.39),rgba(0, 128, 0, 0.267),rgba(0, 128, 0, 0.116));
+        background-repeat: no-repeat;
     }
   
     .logo:hover{
