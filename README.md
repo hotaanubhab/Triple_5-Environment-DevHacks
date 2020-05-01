@@ -4,22 +4,21 @@
 ----------------------------------
 
 * Design a smart waste collection system that allows citizens to segregate the various types of solid waste they want to dispose and the municipal authorities to efficiently collect the same.
-Most recyclable waste ends up in a dump yard due to the lack of efficient waste management.
+* Most recyclable waste ends up in a dump yard due to the lack of efficient waste management.
 
-Solid Waste Management (SWM) is one among the basic essential services provided by municipal authorities to keep urban centres clean. However flawed system of waste disposal is in practice of dumping waste within or outside the urban areas hapazardly.
+* Solid Waste Management (SWM) is one among the basic essential services provided by municipal authorities to keep urban centres clean. However flawed system of waste disposal is in practice of dumping waste within or outside the urban areas hapazardly.
 
-*CREATION OF A WEB PORTAL 'TrashEx' KEEPING TRACK OF WASTE
+* CREATION OF A WEB PORTAL 'TrashEx' KEEPING TRACK OF WASTE
 We envisioned this website that would collect the data on each waste pickup and  optimize the process through use of several APIs that make the process userfriendly and easier for both citizens as well as municipal authorities.
 
 
 ### Solution Description
 ----------------------------------
-A separate provision for collection of domestic and recyclable waste.
+* A separate provision for collection of domestic and recyclable waste.
 
-Sell requests genration with location of recyclable material 
-in database that can be viewed by Municipalities  and  Waste Management , or Recycling Firms.
+* Sell requests genration with location of recyclable material in database that can be viewed by Municipalities  and  Waste Management , or Recycling Firms.
 
-Storing Location Data and using it to optimize routes by APIs for better deploying of Garbage Pickup Resources.
+* Storing Location Data and using it to optimize routes by APIs for better deploying of Garbage Pickup Resources.
 
 #### Architecture Diagram
 
@@ -41,6 +40,6 @@ Also attaching Google Drive video link for demonstration of the working.
 ### Team Members
 ----------------------------------
 
-Anubhab Hota (Team Captain) - 1905522@kiit.ac.in
-Prabhav Tewari  - 1905331@kiit.ac.in
-Aryan Raj Banerjee - 1905314@kiit.ac.in
+* Anubhab Hota (Team Captain) - 1905522@kiit.ac.in
+* Prabhav Tewari  - 1905331@kiit.ac.in
+* Aryan Raj Banerjee - 1905314@kiit.ac.in
